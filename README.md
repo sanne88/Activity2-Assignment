@@ -1,2 +1,2 @@
 # Activity2 Assignment
- created repository for html and css activity
+ Created repository for html and css activity. This repo demonstrates the usage of html elements and css.style sheets.
