@@ -22,9 +22,10 @@ body {
     font-family:"Times New Roman, Times, serif";
 }
 
+/* Images and logo style sheet */
 .logo {
     height: auto;
-max-width:  100%;   
+    max-width:  100%;   
 }
 
 img {
