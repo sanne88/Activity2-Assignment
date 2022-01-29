@@ -27,15 +27,10 @@ body {
 max-width:  100%;   
 }
 
-#home{
-    text-align: center;
-    width: 100%;
-    height: auto;
-}
-
 img {
     max-width: 100%;
     height: auto;
+    object-fit: cover;
 }
 .p {
     font-size: 1em;
@@ -49,19 +44,11 @@ img {
     display:  flex;
     flex-direction: row;
     justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+    height: auto;
 }
 
-
-/* Flex container styles */
-
-.flex-container  {
-    flex-direction: row;
-    display: flex;   
-    justify-content: space-evenly;
-    font-size: 1em;
-    font-family: " Times New Roman, Times, serif";
-    align-items: center;
-}
 .menu {
     align-items: center;
     background-color: rgba(57, 114, 224, 1);
@@ -77,10 +64,17 @@ img {
     color: white;
 }
 
-.introimg
-{
-    width: 100%;
-    height: 100%;
+
+
+/* Flex container styles */
+
+.flex-container  {
+    flex-direction: row;
+    display: flex;   
+    justify-content: space-evenly;
+    font-size: 1em;
+    font-family: " Times New Roman, Times, serif";
+    align-items: center;
 }
 
 .flex-container-col  {
@@ -90,9 +84,22 @@ img {
     
 }
 
+/* Intro background image styles */
+.introimg
+{
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+
+}
+
 span {
     margin-left: 1;
 }
+
+/* anchor tag styles */
 
 a{
     color: white;
@@ -108,18 +115,20 @@ a span
 a:link    {color:lightblue;}
 a:hover   {color:whitesmoke;} 
 
-/* css grid styles */
+/* css grid styles for gallery */
 .grid {
 
     display: grid;
     align-items: center;
     grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
 }
 
 .grid img {
-    max-width: 100%;
+    width: 100%;
     border : 1px solid white;
+    object-fit: cover;
+    height: auto;
 }
 
 /*Responsive styles */
